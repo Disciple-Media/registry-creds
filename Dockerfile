@@ -3,7 +3,7 @@ WORKDIR /go/src/github.com/upmc-enterprises/registry-creds
 COPY . .
 RUN make build
 
-FROM alpine:3.4
+FROM alpine:3.8
 MAINTAINER Steve Sloka <slokas@upmc.edu>
 
 RUN apk add --update ca-certificates && \
